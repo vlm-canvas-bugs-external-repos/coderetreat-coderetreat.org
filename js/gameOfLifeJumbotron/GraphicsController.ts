@@ -35,6 +35,9 @@ export class GraphicsController {
       resolution: 2,
       autoStart: false,
     });
+
+    window.__PIXI_APP__ = this.pixiApp;
+
     this.viewport = new Viewport({
       screenWidth: element.width,
       screenHeight: element.height,
